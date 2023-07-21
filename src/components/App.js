@@ -12,7 +12,7 @@ function App() {
     <div>
       <NavBar />
       <Home user={user}/>
-      <About />
+      <About bio={user.bio} github={user.github} linkedin={user.linkedin}/> //pass bio, github, and linkedin as props to the About
     </div>
   );
 }
